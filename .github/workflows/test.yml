@@ -1,0 +1,21 @@
+name: Test
+on:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'npm'
+      - name: Setup npmrc
+        run: npm config set //registry.npmjs.org/:_authToken=${{secrets.CI_NPM_TOKEN_READONLY}}
+      - name: Install, Test and Build
+        run: |
+          npm ci
+          npm run typecheck
+          npm run build

@@ -1,0 +1,32 @@
+.DS_Store
+node_modules
+/dist
+/dist-sdk
+/examples/node/output
+/coverage
+/tests/snapshots/*_actual.png
+/tests/snapshots/*_diff.png
+/tests/snapshots/*_stats.json
+/tasks/temp
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+stats.html
+
+# Editor directories and files
+.idea
+.vscode
+.env
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+*.sublime-workspace
+*.sublime-project

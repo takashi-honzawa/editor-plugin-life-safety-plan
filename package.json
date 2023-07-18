@@ -1,0 +1,35 @@
+{
+  "name": "editor-plugin-lfe-safety-plan",
+  "version": "0.2.3",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "build": "vite build  --base=/editor-plugin-lfe-safety-plan/",
+    "test": "jest",
+    "release": "standard-version"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@archilogic/editor-connection": "0.2.1",
+    "@archilogic/floor-plan-core": "4.0.1",
+    "@archilogic/floor-plan-webgl": "4.0.1",
+    "@archilogic/ui-components": "1.0.0",
+    "dom-to-image": "^2.6.0",
+    "javascript-astar": "^0.4.1",
+    "vue": "^3.2.30"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "dotenv": "^16.0.1",
+    "jest": "^27.5.1",
+    "standard-version": "^9.3.2",
+    "tailwindcss": "^3.0.23",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.7.0",
+    "vite": "^2.8.1"
+  }
+}
