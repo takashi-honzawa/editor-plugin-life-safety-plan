@@ -1,8 +1,6 @@
-# editor-plugin-sensors
+# editor-plugin-life-safety-plan
 
-Editor plugin to place hubs and sensors following a set of rules provided by Carrier
-
-![image](https://user-images.githubusercontent.com/2423851/176249665-10d11290-c764-4482-9bec-dcf3bf81cfe8.png)
+Editor plugin to generate life safety plans
 
 ## Development
 ### Local Development
@@ -36,5 +34,3 @@ npm run release
 ```
 
 after pushing the changes and the new tag it deploys to
-
-https://archilogic-com.github.io/editor-plugin-sensors/
